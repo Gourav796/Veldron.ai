@@ -29,7 +29,7 @@ def create_image(prompt):
 # ============================================
 st.set_page_config(page_title="AI Agent", page_icon="🤖", layout="centered")
 
-st.title("🤖 Multi-AI Agent")
+st.title("Veldron AI")
 st.caption("Groq (Text) + Flux (Images)")
 
 # Initialize chat history
@@ -44,7 +44,7 @@ for msg in st.session_state.messages:
             st.image(msg["image"])
 
 # User input
-user_input = st.chat_input("Type 'Draw a cat' or 'Write a poem'...")
+user_input = st.chat_input("Type'Ask me something'...")
 
 if user_input:
     # Add user message
